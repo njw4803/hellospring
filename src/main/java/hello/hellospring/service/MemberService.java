@@ -2,14 +2,17 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
-import hello.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+//@Service // 컴포넌트 스캔방식, 스프링 컨테이너 Service 등록한다.
 public class MemberService {
     private final MemberRepository memberRepository;
 
+    //@Autowired // 컴포넌트 스캔방식,생성자가 하나면 생략 가능
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
