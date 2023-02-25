@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+//순수 자바코드로만 이루어진 test, 단위테스트
 class MemberServiceTest {
     MemberService memberService;
     MemoryMemberRepository memberRepository;
