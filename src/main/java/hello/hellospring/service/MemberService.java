@@ -13,6 +13,7 @@ public class MemberService {
     private final MemberRepository memberRepository;
 
     //@Autowired // 컴포넌트 스캔방식,생성자가 하나면 생략 가능
+
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
