@@ -18,6 +18,7 @@ public class MemberController {
     @Autowired // 연결시켜주는 역할, 스프링 빈에 등록되어있는 객체를 주입시킨다. 생성자가 하나면 생략 가능
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+        System.out.println("memberService = " + memberService.getClass());
     }
 
     @GetMapping("/members/new")
